@@ -1,0 +1,166 @@
+/* style.css */
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'monospace', cursive, sans-serif;
+    line-height: 1.6;
+    background-color: #ffe4e1;  /* Light pinkish background */
+    color: #333;
+    margin: 0;
+}
+
+nav {
+    background: #ff69b4;  /* Hot pink navigation bar */
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    padding: 20px;
+    transition: background 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+nav ul li:hover, .home{
+    background-color: #ffb6c1;
+}
+
+header {
+    background: #ffb6c1;  /* Lighter pink for header */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 5px solid #ff69b4;  /* Hot pink border at the bottom */
+}
+
+header .profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  /* Aligns the profile left */
+    margin: auto;
+    max-width: 1200px;
+}
+
+header img {
+    border-radius: 50%;
+    width: 200px;  /* Increased image size */
+    height: 200px;  /* Increased image size */
+    object-fit: cover;
+    margin: 1rem;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .profile-text {
+    text-align: left;
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #ff69b4;  /* Hot pink for section title */
+}
+.project-description h3 {
+    font-size: 1.8em; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+/* Ensure the entire height is used */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Body takes full height and flexbox ensures footer is at the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content area will take the remaining space */
+section {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+section {
+    position: relative; /* Establish a containing block for the button */
+    padding: 20px; /* Add padding for spacing */
+}
+/* button */
+.explore-button {
+    display: inline-block;
+    position: absolute; /* Position it relative to the section */
+    right: 95px; /* Align to the right */
+    margin-top: 85px; /* Space above the button */
+    padding: 12px 25px;
+    background-color: #ff69b4; /* Bright pink background */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow to make it pop */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.explore-button:hover {
+    background-color: #ff85c1; /* Lighter pink on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Bigger shadow on hover */
+    transform: translateY(-10px); /* Slight lift on hover */
+}
+
+/* Footer stays at the bottom */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-top: auto;  /* This pushes footer down */
+    text-align: center;
+    padding: 1rem;
+    background: #ffb6c1;
+    color: #fff;
+    border-top: 5px solid #ff69b4;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
